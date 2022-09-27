@@ -1,5 +1,5 @@
 {
-  "name": "hello-node-expat",
+  "name": "hello-xml2json",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node-expat": "^2.4.0"
+    "xml2json": "^0.12.0"
   }
 }

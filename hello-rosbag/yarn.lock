@@ -30,6 +30,11 @@ int53@1.0.0:
   resolved "https://registry.npmjs.org/int53/-/int53-1.0.0.tgz#65eef2b8e25df0d8d137520f31c47da67c97aaa1"
   integrity sha512-u8BMiMa05OPBgd32CKTead0CVTsFVgwFk23nNXo1teKPF6Sxcu0lXxEzP//zTcaKzXbGgPDXGmj/woyv+I4C5w==
 
+lz4js@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.npmjs.org/lz4js/-/lz4js-0.2.0.tgz#09f1a397cb2158f675146c3351dde85058cb322f"
+  integrity sha512-gY2Ia9Lm7Ep8qMiuGRhvUq0Q7qUereeldZPP1PMEJxPtEWHJLqw9pgX68oHajBH0nzJK4MaZEA/YNV3jT8u8Bg==
+
 rosbag@^3.0.1:
   version "3.0.1"
   resolved "https://registry.npmjs.org/rosbag/-/rosbag-3.0.1.tgz#2551ff2c44be6ff411c87ef43f60f1927a163fdc"

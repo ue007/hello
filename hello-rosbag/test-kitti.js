@@ -19,8 +19,8 @@ async function fullyReadBag(name, opts) {
 }
 
 async function logMessagesFromFooBar() {
-	const messages = await fullyReadBag('example-lz4', {
-		topics: ['/turtle1/color_sensor'],
+	const messages = await fullyReadBag('kitti_2011_09_26_drive_0005_synced', {
+		topics: ['/kitti/velo/pointcloud'],
 		decompress: {
 			lz4: (buffer) => {
 				const unCompress = Buffer.from(lz4.decompress(buffer));

@@ -2,7 +2,7 @@ const { open } = require('rosbag');
 
 async function logMessagesFromFooBar() {
 	// open a new bag at a given file location:
-	const bag = await open('./fixtures/example-lz4.bag');
+	const bag = await open('./fixtures/test-example-lz4.bag');
 
 	// read all messages from both the '/foo' and '/bar' topics:
 	await bag.readMessages({ topics: ['/rosout'] }, (result) => {

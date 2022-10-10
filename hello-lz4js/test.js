@@ -11,3 +11,6 @@ var decompressed = lz4.decompress(compressed);
 var data = fs.readFileSync("package.json");
 compressed = Buffer.from(lz4.compress(data));
 fs.writeFileSync('package.lz4', compressed);
+
+
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JavaScript | fetch() Method</title>
+	</head>
+	<body>
+		<script>
+			fetch('https://jsonplaceholder.typicode.com/todos/1')
+				.then((res) => res.json())
+				.then((d) => {
+					console.log(d);
+				})
+				.catch((e) => console.log(e));
+
+			fetch('./data.json')
+				.then((res) => res.json())
+				.then((d) => {
+					console.log(d);
+				})
+				.catch((e) => console.log(e));
+
+			function readTextFile(file) {
+				var rawFile = new XMLHttpRequest();
+				rawFile.open('GET', file, false);
+				rawFile.onreadystatechange = function () {
+					if (rawFile.readyState === 4) {
+						if (rawFile.status === 200 || rawFile.status == 0) {
+							var allText = rawFile.responseText;
+							alert(allText);
+						}
+					}
+				};
+				rawFile.send(null);
+			}
+			// https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors/CORSRequestNotHttp
+			readTextFile('file:///Users/merlot/Documents/Zone/ue007/hello/hello-fetch/data.json');
+		</script>
+	</body>
+</html>

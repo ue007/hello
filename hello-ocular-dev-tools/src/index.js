@@ -1,4 +1,4 @@
-import main from './main';
-console.log('hello index!');
+import main from "./main";
+console.log("hello index!");
 
 main();

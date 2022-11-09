@@ -3,6 +3,10 @@
  
 using namespace std;  
   
+#define LENGTH 10   
+#define WIDTH  5
+#define NEWLINE '\n'
+
 int main()  
 {  
     cout << "type: \t\t" << "************size**************"<< endl;  
@@ -51,5 +55,10 @@ int main()
     cout << "string: \t" << "所占字节数：" << sizeof(string) << endl;  
     // << "\t最大值：" << (numeric_limits<string>::max)() << "\t最小值：" << (numeric_limits<string>::min)() << endl;  
     cout << "type: \t\t" << "************size**************"<< endl;  
+
+    int area;  
+    area = LENGTH * WIDTH;
+    cout << area;
+    cout << NEWLINE;
     return 0;  
 }

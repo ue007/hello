@@ -11,35 +11,16 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-/* eslint-disable camelcase */
-import { alias } from 'yargs';
-import { register, convertArgs } from './src';
+import {ROS2XVIZConverter} from './ros-2-xviz';
 
-/**
- * set up ros2 provider
- * @param {*} args
- */
-function setupROSProvider(args) {
-	register({
-		topicConfig: [
-			{
-				topic: '/topic',
-				type: 'std_msgs/msg/String',
-				converter: 'TopicConverter',
-				config: {
-					xvizStream: 'xviz_msgs/topic',
-				},
-			},
-		],
-	});
+// Provided a list of converters the factory can create an instance of
+// a ROS2XVIZConverter object along with the mapping config.
+export class ROS2XVIZFactory {
+  constructor(converters) {
+    this.converters = converters;
+  }
+
+  create(rosConfig, options) {
+    return new ROS2XVIZConverter(this.converters, rosConfig, options);
+  }
 }
-
-function main() {
-	let args = alias('h', 'help');
-	args = convertArgs(args);
-
-	// This will parse and execute the server command
-	args.middleware(setupROSProvider).parse();
-}
-
-main();

@@ -8,8 +8,8 @@
 			"name": "Launch via NPM",
 			"request": "launch",
 			"runtimeArgs": [
-				"run",
-				"start"
+				"run-script",
+				"debug"
 			],
 			"runtimeExecutable": "npm",
 			"skipFiles": [
@@ -17,6 +17,7 @@
 			],
 			"type": "node"
 		},
+
 		{
 			"type": "node",
 			"request": "launch",
@@ -24,10 +25,7 @@
 			"skipFiles": [
 				"<node_internals>/**"
 			],
-			"program": "${workspaceFolder}/index.js",
-			"env": {
-				"NODE_ENV": "development"
-			}
+			"program": "${workspaceFolder}/index.js"
 		}
 	]
 }

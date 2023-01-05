@@ -1,0 +1,13 @@
+{
+  "name": "test_node_integration_electron",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^8.2.1"
+  },
+  "scripts": {
+    "start": "electron index.js"
+  }
+}
+

@@ -18,3 +18,9 @@
 1. 安装 node 环境
 2. 修改 index.js 中要处理文件夹路径。
 3. 执行 node index.js 即可
+
+
+
+## 参考文档
+1. https://juejin.cn/post/7034411980316213256 FFMPEG 使用显卡加速转码
+2. 

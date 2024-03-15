@@ -24,3 +24,6 @@ hello
 - https://github.com/ros2/ros2
 - https://fishros.com/d2lros2/
 - http://fishros.org/doc/ros2/humble/index.html
+
+## algo
+- https://github.com/krahets/hello-algo
